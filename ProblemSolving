@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void Main(String[] args) {
-        // Create a list of strings
+    
         List<String> list = new ArrayList<>();
         list.add("++");
         list.add("++");
