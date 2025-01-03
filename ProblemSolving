@@ -1,0 +1,29 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class Main {
+    public static void Main(String[] args) {
+        // Create a list of strings
+        List<String> list = new ArrayList<>();
+        list.add("++");
+        list.add("++");
+        list.add("--");
+        list.add("++");
+
+        int result= calc(list);
+        System.out.println(result);
+    }
+
+     public static int calc(List<String> list) {
+     int counter = 0;
+     for (String s : list) {
+         if (s.equals("++")) {
+             counter++;
+         }
+         if (s.equals("--")) {
+             counter--;
+         }
+     }
+     return counter;
+ }
+}
