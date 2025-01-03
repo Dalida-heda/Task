@@ -7,7 +7,7 @@ public class Main {
         UserService userService = new UserService();
         Scanner scanner = new Scanner(System.in);
 
-        // User Registration
+    
         System.out.println("Register a new user:");
         System.out.println("Username: ");
         String username = scanner.nextLine();
@@ -17,7 +17,7 @@ public class Main {
         String password = scanner.nextLine();
         userService.registerUser (username, email, password);
 
-        // User Login
+
         System.out.println("\nLogin:");
         System.out.print("Email: ");
         String loginEmail = scanner.nextLine();
